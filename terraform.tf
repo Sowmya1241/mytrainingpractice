@@ -1,9 +1,9 @@
-resource " aws_instance" " frontend"{
+resource " aws_instance" "frontend"{
   ami = "ami-090252cbe067a9e58"
   instance_type= " t3.micro"
   vpc_security_group_ids = ["sg-00d7fa32c4ab062ea"]
   tags = {
-    Name = " frontend"
+    Name = "frontend"
 
   }
 
